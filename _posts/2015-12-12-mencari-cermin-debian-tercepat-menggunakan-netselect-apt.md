@@ -16,19 +16,19 @@ Pengguna Debian dapat dengan mudah membuat `sources.list` berisi cermin tercepat
 
 * Pasang paket `netselect-apt`  
 
-  ```bash
+  ```sh
   sudo aptitude install netselect-apt
   ```
 
 * Jalankan `netselect-apt` dengan *switch* `--help` untuk melihat pilihan apa saja yang disediakannya.  
 
-  ```bash
+  ```sh
   sudo netselect-apt --help
   ```
 
   Hasilnya:
 
-  ```bash
+  ```sh
   Usage: netselect-apt [OPTIONS] [ debian_release ]
          debian_release is one of stable, testing, unstable, experimental
          or a codename etch, lenny, squeeze, wheezy, jessie, sid
@@ -46,7 +46,7 @@ Pengguna Debian dapat dengan mudah membuat `sources.list` berisi cermin tercepat
 
 * Jalankan `netselect-apt` untuk mendaftar cermin tercepat  
 
-  ```bash
+  ```sh
   sudo netselect-apt sid -nc ID -o /etc/apt/sources.list
   ```  
 
@@ -54,7 +54,7 @@ Pengguna Debian dapat dengan mudah membuat `sources.list` berisi cermin tercepat
 
   Berikut hasilnya;
 
-  ```bash
+  ```sh
   Using distribution sid.
   Retrieving the list of mirrors from www.debian.org...
 
@@ -91,7 +91,7 @@ Pengguna Debian dapat dengan mudah membuat `sources.list` berisi cermin tercepat
 * *That's it!*  
   Berkas `sources.list` kini berisi cermin tercepat yang dapat diakses dari tempat kita.  
 
-  ```bash
+  ```sh
   # Debian packages for sid
   deb http://suro.ubaya.ac.id/debian/ sid main contrib non-free
   # Uncomment the deb-src line if you want 'apt-get source'
